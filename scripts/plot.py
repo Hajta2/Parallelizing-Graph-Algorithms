@@ -18,7 +18,7 @@ class plotter:
         runtimes = pd.read_csv(input_file)
         print(runtimes.columns)
         print(runtimes)
-        sns.relplot(data=runtimes, x=" Density", y=" CSR w/o MKL", kind="line", hue="Vertices")
+        sns.relplot(data=runtimes, x="Density", y="CSR w/o MKL", kind="line", hue="Vertices")
         plt.show()
 
 
